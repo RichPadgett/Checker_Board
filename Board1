@@ -1,0 +1,377 @@
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.UIManager;
+import javax.swing.JTextPane;
+
+public class Board_8x8 {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Board_8x8 window = new Board_8x8();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Board_8x8() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	
+	private void initialize() {
+		frame = new JFrame();
+		frame.getContentPane().setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.foreground"));
+		frame.setBounds(100, 100, 512, 575);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel.setBounds(12, 12, 50, 50);
+		frame.getContentPane().add(panel);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_1.setBounds(74, 12, 50, 50);
+		frame.getContentPane().add(panel_1);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_2.setBounds(136, 12, 50, 50);
+		frame.getContentPane().add(panel_2);
+		
+		JPanel panel_3 = new JPanel();
+		panel_3.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_3.setBounds(198, 12, 50, 50);
+		frame.getContentPane().add(panel_3);
+		
+		JPanel panel_4 = new JPanel();
+		panel_4.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_4.setBounds(260, 12, 50, 50);
+		frame.getContentPane().add(panel_4);
+		
+		JPanel panel_5 = new JPanel();
+		panel_5.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_5.setBounds(322, 12, 50, 50);
+		frame.getContentPane().add(panel_5);
+		
+		JPanel panel_6 = new JPanel();
+		panel_6.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_6.setBounds(384, 12, 50, 50);
+		frame.getContentPane().add(panel_6);
+		
+		JPanel panel_7 = new JPanel();
+		panel_7.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_7.setBounds(446, 12, 50, 50);
+		frame.getContentPane().add(panel_7);
+		
+		JPanel panel_8 = new JPanel();
+		panel_8.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_8.setBounds(12, 74, 50, 50);
+		frame.getContentPane().add(panel_8);
+		
+		JPanel panel_9 = new JPanel();
+		panel_9.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_9.setBounds(74, 74, 50, 50);
+		frame.getContentPane().add(panel_9);
+		
+		JPanel panel_10 = new JPanel();
+		panel_10.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_10.setBounds(136, 74, 50, 50);
+		frame.getContentPane().add(panel_10);
+		
+		JPanel panel_11 = new JPanel();
+		panel_11.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_11.setBounds(198, 74, 50, 50);
+		frame.getContentPane().add(panel_11);
+		
+		JPanel panel_12 = new JPanel();
+		panel_12.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_12.setBounds(260, 74, 50, 50);
+		frame.getContentPane().add(panel_12);
+		
+		JPanel panel_13 = new JPanel();
+		panel_13.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_13.setBounds(322, 74, 50, 50);
+		frame.getContentPane().add(panel_13);
+		
+		JPanel panel_14 = new JPanel();
+		panel_14.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_14.setBounds(384, 74, 50, 50);
+		frame.getContentPane().add(panel_14);
+		
+		JPanel panel_15 = new JPanel();
+		panel_15.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_15.setBounds(446, 74, 50, 50);
+		frame.getContentPane().add(panel_15);
+		
+		JPanel panel_16 = new JPanel();
+		panel_16.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_16.setBounds(12, 136, 50, 50);
+		frame.getContentPane().add(panel_16);
+		
+		JPanel panel_17 = new JPanel();
+		panel_17.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_17.setBounds(74, 136, 50, 50);
+		frame.getContentPane().add(panel_17);
+		
+		JPanel panel_18 = new JPanel();
+		panel_18.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_18.setBounds(136, 136, 50, 50);
+		frame.getContentPane().add(panel_18);
+		
+		JPanel panel_19 = new JPanel();
+		panel_19.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_19.setBounds(198, 136, 50, 50);
+		frame.getContentPane().add(panel_19);
+		
+		JPanel panel_20 = new JPanel();
+		panel_20.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_20.setBounds(260, 136, 50, 50);
+		frame.getContentPane().add(panel_20);
+		
+		JPanel panel_21 = new JPanel();
+		panel_21.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_21.setBounds(322, 136, 50, 50);
+		frame.getContentPane().add(panel_21);
+		
+		JPanel panel_22 = new JPanel();
+		panel_22.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_22.setBounds(384, 136, 50, 50);
+		frame.getContentPane().add(panel_22);
+		
+		JPanel panel_23 = new JPanel();
+		panel_23.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_23.setBounds(446, 136, 50, 50);
+		frame.getContentPane().add(panel_23);
+		
+		JPanel panel_24 = new JPanel();
+		panel_24.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_24.setBounds(12, 198, 50, 50);
+		frame.getContentPane().add(panel_24);
+		
+		JPanel panel_25 = new JPanel();
+		panel_25.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_25.setBounds(74, 198, 50, 50);
+		frame.getContentPane().add(panel_25);
+		
+		JPanel panel_26 = new JPanel();
+		panel_26.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_26.setBounds(136, 198, 50, 50);
+		frame.getContentPane().add(panel_26);
+		
+		JPanel panel_27 = new JPanel();
+		panel_27.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_27.setBounds(198, 198, 50, 50);
+		frame.getContentPane().add(panel_27);
+		
+		JPanel panel_28 = new JPanel();
+		panel_28.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_28.setBounds(260, 198, 50, 50);
+		frame.getContentPane().add(panel_28);
+		
+		JPanel panel_29 = new JPanel();
+		panel_29.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_29.setBounds(322, 198, 50, 50);
+		frame.getContentPane().add(panel_29);
+		
+		JPanel panel_30 = new JPanel();
+		panel_30.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_30.setBounds(384, 198, 50, 50);
+		frame.getContentPane().add(panel_30);
+		
+		JPanel panel_31 = new JPanel();
+		panel_31.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_31.setBounds(446, 198, 50, 50);
+		frame.getContentPane().add(panel_31);
+		
+		JPanel panel_32 = new JPanel();
+		panel_32.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_32.setBounds(12, 259, 50, 50);
+		frame.getContentPane().add(panel_32);
+		
+		JPanel panel_33 = new JPanel();
+		panel_33.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_33.setBounds(74, 260, 50, 50);
+		frame.getContentPane().add(panel_33);
+		
+		JPanel panel_34 = new JPanel();
+		panel_34.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_34.setBounds(136, 259, 50, 50);
+		frame.getContentPane().add(panel_34);
+		
+		JPanel panel_35 = new JPanel();
+		panel_35.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_35.setBounds(198, 259, 50, 50);
+		frame.getContentPane().add(panel_35);
+		
+		JPanel panel_36 = new JPanel();
+		panel_36.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_36.setBounds(260, 259, 50, 50);
+		frame.getContentPane().add(panel_36);
+		
+		JPanel panel_37 = new JPanel();
+		panel_37.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_37.setBounds(322, 260, 50, 50);
+		frame.getContentPane().add(panel_37);
+		
+		JPanel panel_38 = new JPanel();
+		panel_38.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_38.setBounds(384, 260, 50, 50);
+		frame.getContentPane().add(panel_38);
+		
+		JPanel panel_39 = new JPanel();
+		panel_39.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_39.setBounds(446, 260, 50, 50);
+		frame.getContentPane().add(panel_39);
+		
+		JPanel panel_40 = new JPanel();
+		panel_40.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_40.setBounds(12, 321, 50, 50);
+		frame.getContentPane().add(panel_40);
+		
+		JPanel panel_41 = new JPanel();
+		panel_41.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_41.setBounds(74, 322, 50, 50);
+		frame.getContentPane().add(panel_41);
+		
+		JPanel panel_42 = new JPanel();
+		panel_42.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_42.setBounds(136, 321, 50, 50);
+		frame.getContentPane().add(panel_42);
+		
+		JPanel panel_43 = new JPanel();
+		panel_43.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_43.setBounds(198, 321, 50, 50);
+		frame.getContentPane().add(panel_43);
+		
+		JPanel panel_44 = new JPanel();
+		panel_44.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_44.setBounds(260, 321, 50, 50);
+		frame.getContentPane().add(panel_44);
+		
+		JPanel panel_45 = new JPanel();
+		panel_45.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_45.setBounds(322, 322, 50, 50);
+		frame.getContentPane().add(panel_45);
+		
+		JPanel panel_46 = new JPanel();
+		panel_46.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_46.setBounds(384, 321, 50, 50);
+		frame.getContentPane().add(panel_46);
+		
+		JPanel panel_47 = new JPanel();
+		panel_47.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_47.setBounds(446, 322, 50, 50);
+		frame.getContentPane().add(panel_47);
+		
+		JPanel panel_48 = new JPanel();
+		panel_48.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_48.setBounds(12, 383, 50, 50);
+		frame.getContentPane().add(panel_48);
+		
+		JPanel panel_49 = new JPanel();
+		panel_49.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_49.setBounds(74, 384, 50, 50);
+		frame.getContentPane().add(panel_49);
+		
+		JPanel panel_50 = new JPanel();
+		panel_50.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_50.setBounds(136, 383, 50, 50);
+		frame.getContentPane().add(panel_50);
+		
+		JPanel panel_51 = new JPanel();
+		panel_51.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_51.setBounds(198, 383, 50, 50);
+		frame.getContentPane().add(panel_51);
+		
+		JPanel panel_52 = new JPanel();
+		panel_52.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_52.setBounds(260, 383, 50, 50);
+		frame.getContentPane().add(panel_52);
+		
+		JPanel panel_53 = new JPanel();
+		panel_53.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_53.setBounds(322, 384, 50, 50);
+		frame.getContentPane().add(panel_53);
+		
+		JPanel panel_54 = new JPanel();
+		panel_54.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_54.setBounds(384, 383, 50, 50);
+		frame.getContentPane().add(panel_54);
+		
+		JPanel panel_55 = new JPanel();
+		panel_55.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_55.setBounds(446, 383, 50, 50);
+		frame.getContentPane().add(panel_55);
+		
+		JPanel panel_56 = new JPanel();
+		panel_56.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_56.setBounds(12, 445, 50, 50);
+		frame.getContentPane().add(panel_56);
+		
+		JPanel panel_57 = new JPanel();
+		panel_57.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_57.setBounds(74, 445, 50, 50);
+		frame.getContentPane().add(panel_57);
+		
+		JPanel panel_58 = new JPanel();
+		panel_58.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_58.setBounds(136, 445, 50, 50);
+		frame.getContentPane().add(panel_58);
+		
+		JPanel panel_59 = new JPanel();
+		panel_59.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_59.setBounds(198, 445, 50, 50);
+		frame.getContentPane().add(panel_59);
+		
+		JPanel panel_60 = new JPanel();
+		panel_60.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_60.setBounds(260, 445, 50, 50);
+		frame.getContentPane().add(panel_60);
+		
+		JPanel panel_61 = new JPanel();
+		panel_61.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_61.setBounds(322, 446, 50, 50);
+		frame.getContentPane().add(panel_61);
+		
+		JPanel panel_62 = new JPanel();
+		panel_62.setBackground(UIManager.getColor("OptionPane.warningDialog.titlePane.shadow"));
+		panel_62.setBounds(384, 445, 50, 50);
+		frame.getContentPane().add(panel_62);
+		
+		JPanel panel_63 = new JPanel();
+		panel_63.setBackground(UIManager.getColor("OptionPane.questionDialog.titlePane.shadow"));
+		panel_63.setBounds(446, 445, 50, 50);
+		frame.getContentPane().add(panel_63);
+			
+		JTextPane txtpnthisIsAn = new JTextPane();
+		txtpnthisIsAn.setBackground(UIManager.getColor("Panel.background"));
+		txtpnthisIsAn.setText("...This is an Area For Players to Recieve Instruction Messages");
+		txtpnthisIsAn.setBounds(12, 507, 484, 29);
+		frame.getContentPane().add(txtpnthisIsAn);
+	}
+
+	
+		
+	
+}
